@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
@@ -24,9 +25,10 @@ class ViewController: UIViewController {
     }
 
     //MARK: Actions
-    @IBAction func setDefaultLabeleText(_ sender: UIButton){
-  mealNameLabel.text = "Default Text"
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        mealNameLabel.text = "Default Text"
     }
+    
     
 }
 
