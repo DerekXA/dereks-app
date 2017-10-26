@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +28,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eoS-lz-w6h">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="meal name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-fI-HX4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meal name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-fI-HX4">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -46,28 +45,32 @@
                                                 <state key="normal" title="set default label text"/>
                                                 <connections>
                                                     <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3R2-Nv-Oil"/>
-                                                    <action selector="sstDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5N-cB-UIE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="BmT-Tp-jm4" secondAttribute="height" multiplier="187:48" id="h6c-CT-Xcc"/>
-                                </constraints>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-0Y-rrV">
-                                <rect key="frame" x="47" y="396" width="320" height="320"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-0Y-rrV">
+                                <rect key="frame" x="9" y="144" width="320" height="320"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="EQo-0Y-rrV" secondAttribute="height" multiplier="1:1" id="xMh-43-ByD"/>
+                                    <constraint firstAttribute="height" constant="320" id="OOe-Vt-pEU"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wpe-zI-b2s" appends="YES" id="5hp-IQ-ah7"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="BmT-Tp-jm4" secondAttribute="trailing" id="1Vh-AK-Q8G"/>
-                            <constraint firstItem="BmT-Tp-jm4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9T0-qF-8kf"/>
-                            <constraint firstItem="BmT-Tp-jm4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hn7-Bb-6Gu"/>
+                            <constraint firstItem="EQo-0Y-rrV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="1c2-Mt-2gG"/>
+                            <constraint firstItem="BmT-Tp-jm4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3Qe-6I-giS"/>
+                            <constraint firstItem="BmT-Tp-jm4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PdY-6c-pts"/>
+                            <constraint firstItem="BmT-Tp-jm4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wq6-Jp-7MW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EQo-0Y-rrV" secondAttribute="trailing" constant="65" id="YQf-WK-CMr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EQo-0Y-rrV" secondAttribute="bottom" constant="272" id="aGY-Zd-HuW"/>
+                            <constraint firstItem="EQo-0Y-rrV" firstAttribute="top" secondItem="BmT-Tp-jm4" secondAttribute="bottom" constant="8" symbolic="YES" id="eep-0d-VEY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -77,6 +80,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wpe-zI-b2s">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="7jR-Uc-ffD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-316" y="78"/>
         </scene>
