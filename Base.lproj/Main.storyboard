@@ -51,8 +51,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-0Y-rrV">
-                                <rect key="frame" x="9" y="144" width="320" height="320"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-0Y-rrV">
+                                <rect key="frame" x="20" y="144" width="320" height="320"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="OOe-Vt-pEU"/>
@@ -82,7 +82,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Wpe-zI-b2s">
                     <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="7jR-Uc-ffD"/>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="a7R-tP-uxE"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
