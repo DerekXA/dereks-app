@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DB5A22F1FA817C0003280A7 /* DerekGitHub in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5A22E1FA817C0003280A7 /* DerekGitHub */; };
 		5DB5A2311FAAA6E5003280A7 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5A2301FAAA6E5003280A7 /* RatingControl.swift */; };
+		5DB5A2331FBA85D2003280A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5A2321FBA85D2003280A7 /* Default-568h@2x.png */; };
 		5DB5BEFF1F8EF80300E77CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5BEFE1F8EF80300E77CAD /* AppDelegate.swift */; };
 		5DB5BF011F8EF80300E77CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5BF001F8EF80300E77CAD /* ViewController.swift */; };
 		5DB5BF041F8EF80300E77CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5BF021F8EF80300E77CAD /* Main.storyboard */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DB5A22E1FA817C0003280A7 /* DerekGitHub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DerekGitHub; path = ../DerekGitHub; sourceTree = "<group>"; };
 		5DB5A2301FAAA6E5003280A7 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		5DB5A2321FBA85D2003280A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5DB5BEFB1F8EF80300E77CAD /* derek'sapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "derek'sapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB5BEFE1F8EF80300E77CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DB5BF001F8EF80300E77CAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		5DB5BEF21F8EF80200E77CAD = {
 			isa = PBXGroup;
 			children = (
-				5DB5A22E1FA817C0003280A7 /* DerekGitHub */,
+				5DB5A2321FBA85D2003280A7 /* Default-568h@2x.png */,
 				5DB5BEFD1F8EF80300E77CAD /* derek'sapp */,
 				5DB5BEFC1F8EF80300E77CAD /* Products */,
 			);
@@ -131,8 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB5BF091F8EF80300E77CAD /* LaunchScreen.storyboard in Resources */,
-				5DB5A22F1FA817C0003280A7 /* DerekGitHub in Resources */,
 				5DB5BF061F8EF80300E77CAD /* Assets.xcassets in Resources */,
+				5DB5A2331FBA85D2003280A7 /* Default-568h@2x.png in Resources */,
 				5DB5BF041F8EF80300E77CAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
